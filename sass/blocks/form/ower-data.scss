@@ -1,0 +1,13 @@
+.owner-data{
+    @media (min-width: $width-desvtop){
+    .field-group__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    :first-child{
+        grid-column: 1/3;
+     }
+    }
+}
+

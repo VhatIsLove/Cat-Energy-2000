@@ -1,0 +1,42 @@
+.catalog-additional__title{
+    color: $color-card-t;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.catalog-additional__list{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .additional-card__title{
+        color: $color-card-t;
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    .additional-card__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .catalog-additional__button{
+        width: 100%;
+    }
+}
+
+.additional-card__definition{
+    margin: 0;
+}
+
+.promo{
+    background: #757575 url("../img/Catalog/Rast/fon-dop-mobil.jpg");
+    padding: 40px;
+
+    .promo__text{
+        color: #fff;
+        font-size: 16px;
+        line-height: 125%;
+        text-align: center;
+    }
+}

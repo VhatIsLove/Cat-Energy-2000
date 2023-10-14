@@ -1,0 +1,34 @@
+.example{
+    background-color: $color-fon;
+}
+
+.example-inner{
+    @media (min-width: $width-desvtop){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 90px;
+    }
+}
+
+.example__list{
+    text-align: center;
+
+    .example__namber{
+        color: $color-basics-title;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .example__description{
+        font-size: 12px;
+        line-height: 100%;
+    } 
+}
+
+.example__description-text{
+    color: $color-basics-title;
+    font-size: 14px;
+    line-height: 143%;
+    text-transform: uppercase;
+    text-align: center;
+}

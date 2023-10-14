@@ -1,0 +1,21 @@
+.contacts__wrepper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .contacts__text{
+        font-size: 16px;
+        line-height: 125%;
+        color: $color-basics-title;
+        text-transform: uppercase;
+    }
+
+    .contacts__addres{
+        font-size: 14px;
+        line-height: 143%;
+    }
+}
+
+.contacts__wrepper--catalog{
+    background-color: $color-fon;
+}

@@ -1,0 +1,16 @@
+.main-nav{
+    display: flex;
+    
+    .main-nav__list{
+        display: grid;
+        grid-template-columns: 320px;
+        text-align: center;
+    }
+}
+.main-nav__link{
+    text-transform: uppercase;
+    color: $color-basics-title;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%
+}

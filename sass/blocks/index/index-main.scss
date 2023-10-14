@@ -1,0 +1,26 @@
+.main__section-header{
+    background: rgba(68, 161, 11, 0.85) url("../img/Index/Rast/cat-fon-index-4.jpg");
+    object-fit: cover;
+    opacity: 0.8;
+    text-align: center;
+
+    .program-selection__text{
+        color: $color-title;
+        text-transform: uppercase;
+    }
+}
+
+.title{
+    color: $color-basics-title;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.title--contrast{
+    color: $color-title;
+}
+
+@import "program-selection";
+@import "mode-of-action";
+@import "example";

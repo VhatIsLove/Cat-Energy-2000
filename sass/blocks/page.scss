@@ -1,0 +1,22 @@
+.page{
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 128%;
+    font-weight: 400;
+}
+
+.page__body{
+    color: $color-basic;
+}
+
+.container-center{
+    margin: 0 20px;
+
+    @media (min-width: $width-tablet){
+        margin: 0 30px;
+    }
+
+    @media (min-width: $width-desvtop){
+        margin: 0 90px;
+    }
+}

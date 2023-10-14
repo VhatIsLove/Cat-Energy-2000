@@ -1,0 +1,43 @@
+.field-group__list,
+.field,
+.field__input{
+    text-transform: uppercase;
+}
+
+.form__basis-inner{
+    @media (min-width: $width-desvtop){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+    }
+}
+
+@import "ower-data";
+
+.commentari__field{
+    width: 100%;
+    resize: none;
+}
+
+.additionally{
+    @media (min-width: $width-tablet){
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 61px;
+
+    .field-group__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 61px;
+        grid-column: 1/3;
+    }
+    }
+
+    @media (min-width: $width-desvtop){
+    .field-group__list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 81px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+$font-family: "Oswald";
+$width-tablet: 768px;
+$width-desvtop: 1440px;
+$color-basic: #444;
+$color-basics-title: #000;
+$color-title: #fff;
+$color-card-t: #222;
+
+$color-botton: #fff;
+$bg-button: #68B738;
+
+$color-fon: #f2f2f2;
+
+@mixin style-after {
+    position: absolute;
+    font-size: 260px;
+    font-weight: 400;
+    color: #f2f2f2;
+    top: 88px;
+    right: 0;
+    z-index: -1;
+}

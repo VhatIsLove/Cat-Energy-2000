@@ -1,0 +1,28 @@
+.program-selection__item-title{
+    font-size: 24px;
+    line-height: 154%;
+    font-weight: 500;
+    color: $color-basics-title;
+    margin: 0;
+}
+
+.program-selection__list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    @media (min-width: $width-tablet){
+        row-gap: 30px;
+    }
+
+    @media (min-width: $width-desvtop){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+    }
+}
+
+.program-selection__item{
+    background-color: $color-fon;
+    flex-grow: 1;
+}
