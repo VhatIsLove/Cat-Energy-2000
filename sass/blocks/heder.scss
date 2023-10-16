@@ -1,10 +1,42 @@
 .main-nav{
     display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $width-tablet){
+        justify-content: space-between;
+    }
+
+    .main-nav__wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: $width-tablet){
+            width: max-content;
+        }
+    }
     
     .main-nav__list{
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 280px;
         text-align: center;
+        margin: 10px auto;
+
+        @media (min-width: $width-tablet){
+            display: flex;
+            flex-wrap: wrap;
+            width: 440px;
+            justify-content: space-between;
+            margin: 0;
+            margin-top: 42px;
+        }
+    }
+}
+
+.main-nav__toggle{
+    @media (min-width: $width-tablet){
+        display: none;
     }
 }
 .main-nav__link{

@@ -11,13 +11,17 @@
     <header class="header container-center">
 
         <nav class="main-nav">
-          <a class="header__logo" href="index.html">
-            <img class="header__logo-imag" src="img/logo/logo-header-mobile.svg" alt="Логотип Cat Enegry" width="34" height="38">
-            <img class="header__logo-imag" src="img/logo/logo-header-mobel-dabel.svg" alt="" width="101" height="19" aria-hidden="true">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visualli-hidden">Открыть меню</span>
-          </button>
+          <div class="main-nav__wrapper">
+            <a class="header__logo" href="index.html">
+              <img class="header__logo-imag" src="img/logo/logo-header-mobile.svg" alt="Логотип Cat Enegry" width="34" height="38">
+            </a>
+            <a class="header__logo" href="index.html">
+              <img class="header__logo-imag" src="img/logo/logo-header-mobel-dabel.svg" alt="" width="101" height="19" aria-hidden="true">
+            </a>
+            <button class="main-nav__toggle" type="button">
+                <span class="visualli-hidden">Открыть меню</span>
+            </button>
+          </div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -33,7 +37,8 @@
 
     </header>
 
-<main class="main container-center">
+<main class="main">
+    <div class="container-center">
     <h1 class="title">Подбор программы</h1>
     <p class="main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
@@ -162,14 +167,17 @@
             </fieldset>
         </form>
     </section>
+    </div>
 
     <section class="main__section contacts">
-      <h2 class="visualli-hidden">Контакты</h2>
-      <div class="contacts__wrepper">
-        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="container-center">
+        <h2 class="visualli-hidden">Контакты</h2>
+        <div class="contacts__wrepper">
+          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
-      <img class="contacts__map" src="img/footer/location-map-mobil.jpg" alt="Карта к офису" width="320" height="362">
+      <div class="contacts__map"></div>
     </section>
 
 </main>

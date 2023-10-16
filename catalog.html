@@ -11,13 +11,17 @@
     <header class="header container-center">
 
         <nav class="main-nav">
-          <a class="header__logo" href="index.html">
-            <img class="header__logo-imag" src="img/logo/logo-header-mobile.svg" alt="Логотип Cat Enegry" width="34" height="38">
-            <img class="header__logo-imag" src="img/logo/logo-header-mobel-dabel.svg" alt="" width="101" height="19" aria-hidden="true">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visualli-hidden">Открыть меню</span>
-          </button>
+            <div class="main-nav__wrapper">
+                <a class="header__logo" href="index.html">
+                    <img class="header__logo-imag" src="img/logo/logo-header-mobile.svg" alt="Логотип Cat Enegry" width="34" height="38">
+                </a>
+                <a class="header__logo" href="index.html">
+                    <img class="header__logo-imag" src="img/logo/logo-header-mobel-dabel.svg" alt="" width="101" height="19" aria-hidden="true">
+                </a>
+                <button class="main-nav__toggle" type="button">
+                    <span class="visualli-hidden">Открыть меню</span>
+                </button>
+            </div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -152,13 +156,13 @@
                     </dl>
                     <a class="card__button button" href="">Заказать</a>
                 </li>
-            </ul>
 
-            <div class="cards__item show-more">
-                <p class="show-more__description">Показать еще 100500 товаров</p>
-                <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-                <button class="shoe-more__button" type="button">Показать все</button>
-            </div>
+                <li class="cards__item show-more">
+                    <p class="show-more__description">Показать еще 100500 товаров</p>
+                    <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+                    <button class="shoe-more__button" type="button">Показать все</button>
+                </li>
+            </ul>
 
         </section>
 
@@ -219,16 +223,18 @@
                 <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
             </div>
         </section>
+        </div>
 
         <section class="main__section contacts">
-            <h2 class="visualli-hidden">Контакты</h2>
-            <div class="contacts__wrepper contacts__wrepper--catalog">
-                <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-                <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="container-center">
+                <h2 class="visualli-hidden">Контакты</h2>
+                <div class="contacts__wrepper">
+                  <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+                  <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                </div>
             </div>
-            <img class="contacts__map" src="img/footer/location-map-mobil.jpg" alt="Карта к офису" width="320" height="362">
+            <div class="contacts__map"></div>
         </section>
-        </div>
     </main>
 
     <footer class="footer">

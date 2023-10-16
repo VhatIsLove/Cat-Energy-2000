@@ -1,7 +1,19 @@
+.contacts{
+    position: relative;
+}
+
 .contacts__wrepper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $color-fon;
+
+    @media (min-width: $width-desvtop){
+        position: absolute;
+        top: 95px;
+        padding: 56px 80px;
+        grid-template-columns: 163px 155px;
+        background-color: #fff;
+    }
 
     .contacts__text{
         font-size: 16px;
@@ -16,6 +28,11 @@
     }
 }
 
-.contacts__wrepper--catalog{
-    background-color: $color-fon;
+.contacts__wrepper--index{
+    background-color: #fff;
+}
+
+.contacts__map{
+    height: 362px;
+    background: url("../img/footer/location-map-mobil.jpg");
 }
