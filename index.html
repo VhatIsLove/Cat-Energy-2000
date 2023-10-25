@@ -10,7 +10,7 @@
 <!-- Шапка старт -->
     <header class="header container-center">
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <a class="header__logo" href="index.html">
                 <img class="header__logo-imag" src="img/logo/logo-header-mobile.svg" alt="Логотип Cat Enegry" width="34" height="38">
@@ -43,12 +43,13 @@
         <h1 class="visualli-hidden">Функциональное питание для котов</h1>
 
         <section class="main__section program-selection">
-
           <div class="main__section-header">
             <h2 class="title title--contrast">Функциональное питание для котов</h2>
-            <p class="program-selection__text">Занялся собой? Займись котом!</p>
-            <a class="program-selection__link button" href="form.html">Подобрать программу</a>
-            <img class="program-selection__image" src="img/Index/Rast/top-imge-mobil.png" alt="Оранжевая банка с кормом" width="280" height="270">
+            <p class="program-selection__text">Мы в ответе за тех, кого приручили!</p>
+            <div class="program-selection__wrapper-position">
+              <div class="program-selection__image"></div>
+              <a class="program-selection__link button" href="form.html">Подобрать программу</a>
+            </div>
           </div>
 
           <div class="container-center program-selection__list">
@@ -176,5 +177,7 @@
       </div>
     </footer>
   <!-- Подвал финишь -->
+
+  <script src="scripts/script.js"></script>
   </body>
 </html>

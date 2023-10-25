@@ -1,12 +1,76 @@
 .main__section-header{
-    background: rgba(68, 161, 11, 0.85) url("../img/Index/Rast/cat-fon-index-4.jpg");
-    object-fit: cover;
-    opacity: 0.8;
+    position: relative;
+    background-image: url("../img/Index/Rast/mobil-index-fon.jpg");
+    background-color: $bg-button;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
+    padding: 0 20px;
+    padding-top: 27px;
+    margin-bottom: 200px;
+    min-height: 480px;
+
+    @media (min-width: $width-tablet){
+        padding: 0 117px;
+        padding-top: 62px;
+        background: none;
+        text-align: left;
+        margin-bottom: 350px;
+    }
 
     .program-selection__text{
-        color: $color-title;
         text-transform: uppercase;
+
+        @media(max-width: $mobile-width-only){
+            color: $color-title;
+        }
+    }
+
+    .program-selection__link{
+        width: 280px;
+        margin: 0 auto;
+        display: block;
+
+        @media (min-width: $width-tablet){
+            position: absolute;
+            top: 29px;
+            left: 117px;
+        }
+    }
+
+    .program-selection__image{
+        margin: 0 auto;
+        width: 280px;
+        height: 270px;
+        background-image: url("../img/Index/Rast/top-imge-mobil.png");
+
+        @media (min-width: $width-tablet){
+            width: 710px;
+            height: 650px;
+            background-image: url("../img/Index/Rast/index-can-tablet-1.png");
+            background-repeat: no-repeat;
+
+        }
+    }
+
+    .title{
+        margin-top: 0;
+
+        @media (min-width: $width-tablet){
+            width: 415px;
+        }
+    }
+
+    .program-selection__wrapper-position{
+        position: absolute;
+        width: 100%;
+        top: 70%;
+        left: 0;
+
+        @media (min-width: $width-tablet){
+            top: auto;
+        }
     }
 }
 
@@ -15,10 +79,16 @@
     font-size: 36px;
     line-height: 100%;
     font-weight: 500;
+
+    @media (min-width: $width-tablet){
+        font-size: 60px;
+    }
 }
 
 .title--contrast{
+    @media(max-width: $mobile-width-only){
     color: $color-title;
+    }
 }
 
 @import "program-selection";
