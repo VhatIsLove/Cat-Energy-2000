@@ -69,24 +69,22 @@
     }
   }
 
-.main-nav__item{
-    &--activ{
-        position: relative;
-  
-        &::after {
-          content: "";
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          height: 2px;
-          background: $color-basic;
-
-          @media (min-width: $width-tablet){
+@media (min-width: $width-tablet){
+    .main-nav__item{
+        &--activ{
+            position: relative;
+    
+            &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 2px;
             background: $bg-button;
-          }
+            }
         }
-      }
+    }
 }
 
 .main-nav__toggle{
@@ -147,6 +145,7 @@
     @media (max-width: $mobile-width-only){
     padding: 24px;
     border-top: 1px solid #e6e6e6; 
+    color: #e6e6e6;
     }
 
     @media (min-width: $width-tablet){

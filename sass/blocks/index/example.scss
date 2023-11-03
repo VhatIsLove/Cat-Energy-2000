@@ -1,4 +1,5 @@
 .example{
+    padding: 25px 0 40px;
     background-color: $color-fon;
 }
 
@@ -11,7 +12,28 @@
 }
 
 .example__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 0;
     text-align: center;
+    border-radius: 4px;
+
+    @media(min-width: $width-tablet){
+        grid-template-columns: 1fr 1fr 320px;
+        margin-bottom: 80px;
+        margin-top: 54px;
+    }
+
+    .example__item{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        padding: 14px 8px;
+        border: 1px solid #cdcdcd;
+    }
+
 
     .example__namber{
         color: $color-basics-title;
@@ -22,13 +44,88 @@
     .example__description{
         font-size: 12px;
         line-height: 100%;
+        margin: 0;
     } 
 }
 
 .example__description-text{
+    grid-column: 1/-1;
     color: $color-basics-title;
     font-size: 14px;
     line-height: 143%;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+
+    @media (min-width: $width-tablet){
+        grid-column: auto;
+        justify-self: end;
+        width: 142px;
+        text-align: end;
+    }
+}
+
+.example__images{
     text-align: center;
+}
+
+.example__image{
+    display: none;
+}
+
+.example__image--active{
+    display: block;
+}
+
+.example__slider{
+    display: grid;
+    grid-template-columns: 49px 1fr 49px;
+    padding: 0 35px;
+    align-items: center;
+}
+
+.slider__button{
+    font-size: inherit;
+    border: none;
+    text-transform: uppercase;
+}
+
+.slider__toggler{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 14px;
+    padding: 3px 5px;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    &::after{
+        content: "";
+        position: absolute;
+        justify-content: center;
+        height: 6px;
+        min-width: 50%;
+        background-color: $bg-button;
+        border-radius: 6px;
+    }
+
+    @media (min-width: $width-tablet){
+        display: none;
+    }
+}
+
+.slider--left .slider__toggler{
+    justify-content: left;
+}
+
+.slider--right .slider__toggler{
+    justify-content: right;
+}
+
+.slider__range{
+    @media (max-width: $mobile-width-only){
+        display: none;
+    }
 }

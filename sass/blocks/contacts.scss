@@ -6,9 +6,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: $color-fon;
+    margin: 26px 0;
 
     @media (min-width: $width-desvtop){
         position: absolute;
+        z-index: 10;
         top: 95px;
         padding: 56px 80px;
         grid-template-columns: 163px 155px;
@@ -20,11 +22,13 @@
         line-height: 125%;
         color: $color-basics-title;
         text-transform: uppercase;
+        margin: 0;
     }
 
     .contacts__addres{
         font-size: 14px;
         line-height: 143%;
+        margin: 0;
     }
 }
 
@@ -33,6 +37,10 @@
 }
 
 .contacts__map{
-    height: 362px;
-    background: url("../img/footer/location-map-mobil.jpg");
+    height: 400px;
+    width: 100%;
+
+    @media (max-width: $mobile-width-only){
+        height: 360px;
+    }
 }

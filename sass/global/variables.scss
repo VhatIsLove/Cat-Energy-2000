@@ -14,12 +14,34 @@ $bg-button: #68B738;
 
 $color-fon: #f2f2f2;
 
-@mixin style-after {
+
+
+@mixin bef-action-item{
+    content: "";
     position: absolute;
-    font-size: 260px;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-button;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $width-tablet) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@mixin style-after {
+    content: counter(action);
+    counter-increment: action;
+    position: absolute;
+    font-size: 280px;
+    line-height: 100%;
     font-weight: 400;
-    color: #f2f2f2;
-    top: 88px;
+    color: #ff1d1da8;
+    top:-39px;
     right: 0;
     z-index: -1;
 }

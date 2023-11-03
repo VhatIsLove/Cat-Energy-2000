@@ -19,6 +19,12 @@
         margin-bottom: 350px;
     }
 
+    @media (min-width: $width-desvtop){
+        background: url("../img/Index/Rast/index-desktop-fon.jpg") no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+
     .program-selection__text{
         text-transform: uppercase;
 
@@ -51,6 +57,12 @@
             background-image: url("../img/Index/Rast/index-can-tablet-1.png");
             background-repeat: no-repeat;
 
+        }
+
+        @media (min-width: $width-desvtop){
+            width: 552px;
+            height: 499px;
+            background-image: url("../img/Index/Rast/index-can.png");
         }
     }
 
