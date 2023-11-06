@@ -11,6 +11,10 @@
     font-size: 24px;
     line-height: 100%;
 
+    @media (min-width: $width-tablet){
+        font-size: 36px;
+    }
+
     @media (min-width: $width-desvtop){
         grid-column: 1/3;
     }
@@ -24,6 +28,18 @@
         @media (min-width: $width-desvtop){
             display: flex;
             justify-content: space-between;
+        }
+    }
+
+    .additional-card__heading{
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: $color-card-t;
+
+        @media (min-width: $width-tablet){
+            font-size: 20px;
         }
     }
 

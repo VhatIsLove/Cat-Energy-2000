@@ -1,8 +1,12 @@
 .page{
     font-family: $font-family;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 128%;
     font-weight: 400;
+
+    @media (min-width: $width-tablet){
+        font-size: 16px;
+    }
 }
 
 .page__body{

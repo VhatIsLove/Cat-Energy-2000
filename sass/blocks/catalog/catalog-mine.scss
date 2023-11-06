@@ -1,2 +1,9 @@
+.catalog-cards{
+    @media (min-width: $width-tablet){
+        margin-top: 163px;
+        margin-bottom: 68px;
+    }
+}
+
 @import "product-card";
 @import "additional";

@@ -66,14 +66,6 @@
         }
     }
 
-    .title{
-        margin-top: 0;
-
-        @media (min-width: $width-tablet){
-            width: 415px;
-        }
-    }
-
     .program-selection__wrapper-position{
         position: absolute;
         width: 100%;
@@ -91,13 +83,22 @@
     font-size: 36px;
     line-height: 100%;
     font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 40px;
 
     @media (min-width: $width-tablet){
         font-size: 60px;
     }
 }
 
-.title--contrast{
+.title--index{
+    margin-bottom: 25px;
+
+    @media (min-width: $width-tablet){
+        margin-bottom: 40px;
+        width: 415px;
+    }
+
     @media(max-width: $mobile-width-only){
     color: $color-title;
     }
