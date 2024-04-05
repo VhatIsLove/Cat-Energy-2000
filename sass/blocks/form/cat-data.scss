@@ -1,0 +1,21 @@
+.cat-data{
+    .field-group__list{
+        @media (min-width: $width-tablet){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.field-group__item{
+    margin-bottom: 14px;
+}
+
+.field__signature{
+    margin-right: 14px;
+}
+
+.field__input{
+    padding: 12px;
+    border: 1px solid $color-border;
+}

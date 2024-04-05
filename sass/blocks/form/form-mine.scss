@@ -1,3 +1,11 @@
+.form__group{
+    border: none;
+
+    @media (min-width: $width-tablet){
+        font-size: 20px;
+    }
+}
+
 .field-group__list,
 .field,
 .field__input{
@@ -7,16 +15,39 @@
 .form__basis-inner{
     @media (min-width: $width-desvtop){
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 60% 1fr;
         column-gap: 80px;
+        border-radius: 40px 25%;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.3);
     }
 }
 
+.field-group__title{
+    font-size: 24px;
+    line-height: 108%;
+    color: #000;
+
+    @media (min-width: $width-tablet){
+        font-size: 36px;
+    }
+}
+
+
+
+@import "cat-data";
+@import "purpose-program";
 @import "ower-data";
 
 .commentari__field{
     width: 100%;
     resize: none;
+    padding: 12px;
+    box-sizing: border-box;
+    @media (min-width: $width-desvtop){
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 .additionally{

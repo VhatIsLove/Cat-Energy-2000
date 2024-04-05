@@ -1,4 +1,5 @@
 .header{
+    position: relative;
     padding-top: 23px;
 
     @media (min-width: $width-tablet){
@@ -7,6 +8,40 @@
 
     @media (min-width: $width-desvtop){
         padding-top: 69px;
+    }
+}
+
+.catalog-header{
+    @media (min-width: $width-desvtop){
+        &::after{
+            content: "";
+            position: absolute;
+            top: -70px;
+            right: -90px;
+            width: 70%;
+            height: 900px;
+            z-index: -1;
+            background: url("../img/Catalog/Rast/top-fon-desctop.jpg") no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+    }
+}
+
+.form-header{
+    @media (min-width: $width-desvtop){
+        &::after{
+            content: "";
+            position: absolute;
+            top: -70px;
+            right: -90px;
+            width: 70%;
+            height: 900px;
+            z-index: -1;
+            background: url("../img/Form/Rast/form-header-Desc.webp") no-repeat;
+            background-position: top;
+            background-size: contain;
+        }
     }
 }
 
@@ -151,6 +186,10 @@
     @media (min-width: $width-tablet){
         padding: 10px 0;
         }
+
+    @media (min-width: $width-desvtop){
+        color: #e6e6e6;
+    }  
 }
 
 .main-nav--nojs .main-nav__toggle {

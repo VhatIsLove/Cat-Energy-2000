@@ -1,3 +1,12 @@
+.mode-of-action{
+
+    .title{
+        @media (min-width: $width-tablet){
+            margin-bottom: 72px;
+        }
+    }
+}
+
 .mode-of-action__list{
     counter-reset: action;
 

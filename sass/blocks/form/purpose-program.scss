@@ -1,0 +1,41 @@
+.radio--selected{
+  cursor: pointer;
+}
+
+.custom-radio{
+  @media (max-width: $mobile-width-only){
+    width: 25px;
+    height: 14px;
+  }
+  display: inline-block;
+  width: 35px;
+  height: 16px;
+  background: $bg-button;
+  border: 1px solid #7e7e7e;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: bottom;
+
+  &::before{
+    @media (max-width: $mobile-width-only){
+      bottom: -6px;
+      width: 6px;
+      height: 14px;
+    }
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    bottom: -5px;
+    width: 7px;
+    height: 16px;
+    background: $color-card-t;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+  }
+}
+
+.radio__input:checked + .custom-radio::before{
+  transform: translate(-50%, -50%) scale(1);
+}

@@ -7,30 +7,58 @@
     grid-template-columns: 1fr 1fr;
     background-color: $color-fon;
     margin: 26px 0;
+    padding: 15px;
+
+    @media (min-width: $width-tablet){
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
 
     @media (min-width: $width-desvtop){
         position: absolute;
         z-index: 10;
         top: 95px;
         padding: 56px 80px;
-        grid-template-columns: 163px 155px;
+        display: grid;
+        grid-template-columns: 230px 230px;
+        column-gap: 40px;
         background-color: #fff;
     }
 
     .contacts__text{
         font-family: "Montserrat", sans-serif;
-        font-size: 16px;
+        letter-spacing: -1px;
+        font-size: 14px;
         line-height: 125%;
         color: $color-basics-title;
         text-transform: uppercase;
         margin: 0;
+
+        @media (min-width: $width-tablet){
+            letter-spacing: normal;
+            font-size: 20px;
+            width: 210px;
+        }
     }
 
     .contacts__addres{
         font-family: "Montserrat", sans-serif;
-        font-size: 14px;
+        letter-spacing: -1px;
+        font-size: 12px;
         line-height: 143%;
         margin: 0;
+        text-align: center;
+
+        @media (min-width: $width-tablet){
+            letter-spacing: normal;
+            font-size: 16px;
+            width: 180px;
+        }
+
+        @media (min-width: $width-desvtop){
+            width: auto;
+        }
     }
 }
 

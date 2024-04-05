@@ -43,7 +43,8 @@
         padding: 38px;
         padding-top: 161px;
         box-sizing: border-box;
-        background-color: $color-fon;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.3);
     }
 
     @media (min-width: $width-desvtop){
@@ -107,25 +108,58 @@
 }
 
 .show-more{
+    position: relative;
     background-color: #fff;
     display: flex;
     text-align: center;
     border: 2px solid $color-fon;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
     @media (max-width: $mobile-width-only){
         border-left: none;
         border-right: none;
+        justify-content: center;
+        padding: 78px 0 25px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 25px;
+            left: 50%;
+            transform: translate(-50%);
+            background: url("../img/Catalog/Vector/plus-mobil.svg");
+        }
     }
 
-    .show-more__description{
+    @media (min-width: $width-tablet){
+        &::after{
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 52px;
+            left: 50%;
+            transform: translate(-50%);
+            background: url("../img/Catalog/Vector/plus-tablet.svg");
+        }
+    }
+
+    .card__heading{
+        margin: 0;
         width: 100%;
     }
 
     .show-more__text{
         width: 100%;
+        margin-bottom: auto;
+
+        @media (max-width: $mobile-width-only){
+            margin: 8px 0 21px;
+        }
     }
 
     .shoe-more__button{

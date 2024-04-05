@@ -1,7 +1,4 @@
 {
-  "name": "{{projectName}}",
-  "private": true,
-  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
@@ -16,7 +13,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp"
@@ -31,10 +28,10 @@
   "editorconfig-cli": [
     "*.json",
     "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "*.html",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.scss"
   ],
   "engines": {
     "node": "^16"
